@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <!-- Enlazamos el archivo CSS para darle estilo a la página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal de la aplicación -->
+    <div class="contenedor">
+        <h1>Conversor de Unidades</h1>
+        <!-- Campo de entrada para que el usuario introduzca el valor -->
+        <input type="number" id="valor" placeholder="Introduce un valor">
+        
+        <!-- Menú desplegable para seleccionar el tipo de conversión -->
+        <select id="tipoConversion">
+            <option value="mToKm">Metros a Kilómetros</option>
+            <option value="kmToM">Kilómetros a Metros</option>
+            <option value="cToF">Celsius a Fahrenheit</option>
+            <option value="fToC">Fahrenheit a Celsius</option>
+        </select>
+        
+        <!-- Botón para ejecutar la conversión -->
+        <button onclick="convertir()">Convertir</button>
+        
+        <!-- Lugar donde se mostrarán los resultados -->
+        <div id="resultado"></div>
+    </div>
+
+    <!-- Enlazamos el archivo JavaScript que contiene la lógica -->
+    <script src="script.js"></script>
+</body>
+</html>
+
